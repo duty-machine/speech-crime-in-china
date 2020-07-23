@@ -1,0 +1,23 @@
+{
+  "name": "speech-crime-in-china",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "csv": "^5.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duty-machine/speech-crime-in-china.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duty-machine/speech-crime-in-china/issues"
+  },
+  "homepage": "https://github.com/duty-machine/speech-crime-in-china#readme"
+}
