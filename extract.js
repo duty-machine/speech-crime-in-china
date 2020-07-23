@@ -121,6 +121,18 @@ async function updateDatabaseByCSV(path) {
   console.log(`csv: ${records.length}`)
   console.log(`database: ${currentDatabase.length}`)
 
+  let csvHash = records.reduce((hash, entry) => {
+    hash[JSON.stringify(entry)] = entry
+    return hash
+  }, {})
+
+  currentDatabase.filter(entry => {
+    if (csvHash[JSON.stringify(entry.raw)] == null) {
+      console.log(entry)
+    }
+  })
+
+
 }
 
 updateDatabaseByCSV('./中国近年文字狱事件盘点(twitter.com_SpeechFreedomCN) - 总表(1).csv')
